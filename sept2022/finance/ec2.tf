@@ -1,8 +1,8 @@
 resource "aws_instance" "web" {
   ami           = "ami-07ffb2f4d65357b42"
-  instance_type = "t3.micro"
+  instance_type = "t2.micro"
 
-  key_name               = "rs-mum-9"
+  key_name               = "demo-data"
   subnet_id              = data.aws_subnet.finance_subnet.id
   vpc_security_group_ids = [aws_security_group.finance_sg.id]
 
@@ -10,7 +10,7 @@ resource "aws_instance" "web" {
 
   tags = {
     Name = "finance-server"
-    Owner = "rsiva"
+    Owner = "amar"
   }
 
   lifecycle {
