@@ -9,7 +9,7 @@ terraform {
     bucket = "my-task-1-hari"
     key    = "finance/infra"
     region = "ap-south-1"
-    dynamodb_table = "finance-infra"
+#   dynamodb_table = "finance-infra"
 #    profile = "rsiva"
   }
 }
