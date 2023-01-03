@@ -6,16 +6,16 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "amar-tf-state"
+    bucket = "rssr-tf-state"
     key    = "finance/infra"
     region = "ap-south-1"
     dynamodb_table = "finance-infra"
-    profile = "amar"
+#    profile = "rsiva"
   }
 }
 
 
 provider "aws" {
   region  = "ap-south-1"
-  profile = "amar"
+#  profile = "rsiva"
 }
