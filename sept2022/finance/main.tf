@@ -6,7 +6,7 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "rssr-tf-state"
+    bucket = "my-task-1-hari"
     key    = "finance/infra"
     region = "ap-south-1"
     dynamodb_table = "finance-infra"
